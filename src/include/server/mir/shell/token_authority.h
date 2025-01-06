@@ -77,7 +77,7 @@ private:
     std::mutex mutable mutex;
 
     /// Time in milliseconds that the compositor will wait before invalidating a token
-    static auto constexpr timeout_ms = std::chrono::seconds(3000);
+    static auto constexpr timeout_ms = std::chrono::milliseconds(3000);
 };
 }
 }
